@@ -10,6 +10,12 @@ const Explore = () => {
     const handleFinClick = () => {
         history.push('/finance'); // Navigate to EMI calculator route
         };
+    const handleLegalClick = () => {
+      history.push('/legal'); // Navigate to EMI calculator route
+      };
+    const handleContractClick = () => {
+      history.push('/contarctors'); // Navigate to EMI calculator route
+      };
 
   return (
     <section className={styles.explore}>
@@ -34,7 +40,7 @@ const Explore = () => {
             <span>Buildings</span>
           </div>
         </div>
-        <div className={`${styles.box} ${styles.contractors}`}>
+        <div className={`${styles.box} ${styles.contractors}`} onClick={handleContractClick}>
           <div className={styles.content}>
             <span>Contractors</span>
           </div>
@@ -49,7 +55,7 @@ const Explore = () => {
             <span>Maintenance</span>
           </div>
         </div>
-        <div className={`${styles.box} ${styles['legal-team']}`}>
+        <div className={`${styles.box} ${styles['legal-team']}`}onClick={handleLegalClick}>
           <div className={styles.content}>
             <span>Legal Team</span>
           </div>

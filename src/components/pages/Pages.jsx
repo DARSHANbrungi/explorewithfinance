@@ -11,6 +11,8 @@ import Contact from "../contact/Contact"
 import Explore from "../explore/explore"
 import Finance from "../finance/fin"
 import Emicalculator from "../emicalc/emicalc"
+import Legal from "../legal/legal"
+import Contarctors from "../home/team/Team"
 
 const Pages = () => {
   return (
@@ -27,6 +29,8 @@ const Pages = () => {
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/finance' component={Finance} />
           <Route exact path='/emi-calculator' component={Emicalculator} />
+          <Route exact path='/legal' component={Legal} />
+          <Route eaxct path='/contarctors' component={Contarctors} />
 
         </Switch>
         <Footer />
