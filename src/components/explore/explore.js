@@ -1,14 +1,21 @@
 // Explore.js
-
 import React from 'react';
+
 import styles from './explore.module.css';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Explore = () => {
+  const history = useHistory(); // Utilize useNavigate hook for navigation
+
+    const handleFinClick = () => {
+        history.push('/finance'); // Navigate to EMI calculator route
+        };
+
   return (
     <section className={styles.explore}>
       <div className={styles['explore-grid']}>
-        <div className={`${styles.box} ${styles.finance}`}>
-          <div className={styles.content}>
+        <div className={`${styles.box} ${styles.finance}`} onClick={handleFinClick}>
+          <div className={styles.content} >
             <span>Finance</span>
           </div>
         </div>

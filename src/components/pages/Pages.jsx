@@ -1,6 +1,6 @@
 import React from "react"
 import Header from "../common/header/Header"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Home from "../home/Home"
 import Footer from "../common/footer/Footer"
 import About from "../about/About"
@@ -9,6 +9,8 @@ import Blog from "../blog/Blog"
 import Services from "../services/Services"
 import Contact from "../contact/Contact"
 import Explore from "../explore/explore"
+import Finance from "../finance/fin"
+import Emicalculator from "../emicalc/emicalc"
 
 const Pages = () => {
   return (
@@ -23,6 +25,9 @@ const Pages = () => {
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/explore' component={Explore} />
           <Route exact path='/contact' component={Contact} />
+          <Route exact path='/finance' component={Finance} />
+          <Route exact path='/emi-calculator' component={Emicalculator} />
+
         </Switch>
         <Footer />
       </Router>
@@ -30,4 +35,4 @@ const Pages = () => {
   )
 }
 
-export default Pages
+export default Pages;
