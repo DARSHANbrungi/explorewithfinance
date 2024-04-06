@@ -53,10 +53,10 @@
   /* Contact button styles */
 
   .contact-button {
-    position: absolute; /* Needed for relative positioning within box */
+    position:center ; /* Needed for relative positioning within box */
     bottom: 10px; /* Adjust position as needed */
     right: 10px; /* Adjust position as needed */
-    padding: 5px 10px; /* Add some padding for better click target */
+    padding: 10px 20px; /* Add some padding for better click target */
     background-color: #007bff; /* Blue background */
     color: white; /* White text */
     text-decoration: none; /* Remove underline */

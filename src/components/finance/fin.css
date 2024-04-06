@@ -68,7 +68,7 @@ body {
     padding: 20px;
     border: 2px solid #ddd;
     border-radius: 5px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: transform 0.2s ease-in-out; /* Smooth hover animation */
   }
@@ -91,3 +91,8 @@ body {
   .bank-button:hover {
     background-color: rgb(73, 236, 73); /* Light green on hover */
   }  
+  .bank-box img {
+    border-radius: 50%; /* Set border-radius to 50% for circular images */
+    width: 100%; /* Ensure image fills the container width */
+    object-fit: cover; /* Maintain aspect ratio and scale to fit */
+  }

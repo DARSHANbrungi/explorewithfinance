@@ -62,7 +62,7 @@ const Explore = () => {
         </div>
         <div className={`${styles.box} ${styles['contact-us']}`}>
           <div className={styles.content}>
-            <span>Contact Us</span>
+            <span>Materials</span>
           </div>
         </div>
       </div>
